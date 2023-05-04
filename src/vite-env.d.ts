@@ -1,7 +1,8 @@
 /// <reference types="vite/client" />
+/// <reference types="vite-plugin-svgr/client" />
 
 declare module "*.svg" {
   const content: React.FC<React.SVGProps<SVGElement>>;
   export default content;
 }
-declare const __APP_VERSION__: string
+declare const __APP_VERSION__: string;

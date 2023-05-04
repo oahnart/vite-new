@@ -21,8 +21,12 @@
 
 
     /*vincent*/
-    "types": ["vite/client"]
+    "types": ["vite/client"],
+    "baseUrl": "src",
   },
-  "include": ["src"],
+  // "include": ["src"],
+  "include": [
+    "src/**/*",
+    "src/*"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
