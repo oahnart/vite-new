@@ -3,7 +3,6 @@ import reactLogo from "assets/react.svg";
 import { ReactComponent as ReactLogo1 } from "assets/react.svg";
 // import viteLogo from "/vite.svg";
 // import ViteLogo1 from "/vite.svg";
-import "./App.css";
 import Home from "pages/Home";
 
 function App() {
