@@ -1,12 +1,12 @@
-import React from "react";
-import * as S from "./style";
-
 function Login() {
+  console.log(import.meta.env.VITE_TEST);
+  console.log(import.meta.env.VITE_TEST1);
+
   return (
-    <S.Container>
+    <div>
       <div>login</div>
       <div className="title">test css</div>
-    </S.Container>
+    </div>
   );
 }
 
