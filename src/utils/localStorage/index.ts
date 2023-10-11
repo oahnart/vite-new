@@ -1,11 +1,3 @@
-/**
- * @author [Peter]
- * @email [hoangvanlam9988@mail.com]
- * @create date 2020-09-29 09:56:05
- * @modify date 2020-09-29 09:56:05
- * @desc [description]
- */
-
 const now = new Date(); // Get current date
 
 /** Save value to localStorage
@@ -20,7 +12,9 @@ export const saveLocalStorage = (
   session?: boolean
 ) => {
   ex_date = ex_date * 24 * 3600000;
-  data = ex_date ? { value: data, expiry: "no" } : { value: data, expiry: now.getTime() + ex_date };
+  data = ex_date
+    ? { value: data, expiry: "no" }
+    : { value: data, expiry: now.getTime() + ex_date };
 
   if (session) {
     sessionStorage.setItem(name, JSON.stringify(data));
@@ -42,7 +36,7 @@ export const getLocalStorage = (name: string, type: number) => {
   if (s === null) return null;
   if (s !== null) s = JSON.parse(s);
 
-  let dateSaved = new Date(s.expiry);
+  const dateSaved = new Date(s.expiry);
   if (s["expiry"] !== undefined && now > dateSaved) {
     deleteLocaStorage(name);
     return null;
