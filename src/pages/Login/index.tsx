@@ -1,8 +1,9 @@
 import { loginApi } from "apis/auth";
+import "./style.scss";
 
 function Login() {
-  console.log(import.meta.env.VITE_TEST);
-  console.log(import.meta.env.VITE_TEST1);
+  // console.log(import.meta.env.VITE_TEST);
+  // console.log(import.meta.env.VITE_TEST1);
 
   const onSubmit = async () => {
     const res: any = await loginApi({
@@ -12,9 +13,9 @@ function Login() {
   };
 
   return (
-    <div>
-      <div onClick={onSubmit}>login</div>
-      <div className="title">test css</div>
+    <div className="max-w-[1170px] mx-auto px-[16px] pt-[100px] pb-[225px]">
+      <div onClick={onSubmit}>login1</div>
+      <div className="text-3xl">test css</div>
     </div>
   );
 }

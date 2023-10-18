@@ -4,23 +4,23 @@
 
 @font-face {
   font-family: 'SpoqaHanSansNeo-Thin';
-  src: local('SpoqaHanSansNeo-Thin'), url("public/fonts/SpoqaHanSansNeo-Thin.ttf") format('opentype');
+  src: local('SpoqaHanSansNeo-Thin'), url("fonts/SpoqaHanSansNeo-Thin.ttf") format('opentype');
 }
 @font-face {
   font-family: 'SpoqaHanSansNeo-Light';
-  src: local('SpoqaHanSansNeo-Light'), url("public/fonts/SpoqaHanSansNeo-Light.ttf") format('opentype');
+  src: local('SpoqaHanSansNeo-Light'), url("fonts/SpoqaHanSansNeo-Light.ttf") format('opentype');
 }
 @font-face {
   font-family: 'SpoqaHanSansNeo-Regular';
-  src: local('SpoqaHanSansNeo-Regular'), url("public/fonts/SpoqaHanSansNeo-Regular.ttf") format('opentype');
+  src: local('SpoqaHanSansNeo-Regular'), url("fonts/SpoqaHanSansNeo-Regular.ttf") format('opentype');
 }
 @font-face {
   font-family: 'SpoqaHanSansNeo-Medium';
-  src: local('SpoqaHanSansNeo-Medium'), url("public/fonts/SpoqaHanSansNeo-Medium.ttf") format('opentype');
+  src: local('SpoqaHanSansNeo-Medium'), url("fonts/SpoqaHanSansNeo-Medium.ttf") format('opentype');
 }
 @font-face {
   font-family: 'SpoqaHanSansNeo-Bold';
-  src: local('SpoqaHanSansNeo-Bold'), url("public/fonts/SpoqaHanSansNeo-Bold.ttf") format('opentype');
+  src: local('SpoqaHanSansNeo-Bold'), url("fonts/SpoqaHanSansNeo-Bold.ttf") format('opentype');
 }
 
 * {
@@ -123,7 +123,7 @@ input[type=number] {
 }
 
 .ant-modal-wrap {
-  cursor: url("public/icons/close.svg"), auto;
+  cursor: url("icons/close.svg"), auto;
 }
 .ant-modal-content {
   cursor: default;

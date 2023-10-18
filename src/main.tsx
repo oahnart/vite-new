@@ -1,7 +1,5 @@
 import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
-import { RouterProvider } from "react-router-dom";
-import router from "./router";
 
 import { Provider as StoreProvider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
@@ -36,9 +34,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
       <PersistGate persistor={persistor} loading={null}>
         <Suspense fallback={<Spin />}>
           <I18nextProvider i18n={i18next}>
-            <App>
-              <RouterProvider router={router} />
-            </App>
+            <App />
           </I18nextProvider>
         </Suspense>
       </PersistGate>

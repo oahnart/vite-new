@@ -1,11 +1,8 @@
-interface Props {
-  children: React.ReactElement;
-}
+import { RouterProvider } from "react-router-dom";
+import router from "./router";
 
-function App({ children }: Props) {
-  console.log("kakak");
-
-  return children;
+function App() {
+  return <RouterProvider router={router} />;
 }
 
 export default App;
